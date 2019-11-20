@@ -9,7 +9,7 @@ public class shuzu1 {
     public static void main(String[] args) {
         shuzu1 a = new shuzu1();
         int[] x={1,2,3,4,5};
-        int[] y={4,5,6,4,3,7,9};
+        int[] y={4,5,8,4,3,7,9};
         int[][] value=a.jiaohuan(x,y);
         x=value[0];
         y=value[1];
