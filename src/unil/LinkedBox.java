@@ -4,7 +4,7 @@ public class LinkedBox implements Box{
     public Node shoujiedian;
     public Node weijiedian;
     public int size;
-    public boolean add(int shuju) {
+    public boolean add(int shuju ) {
         this.cunru(shuju);
         size++;
         return true;

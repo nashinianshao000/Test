@@ -1,7 +1,7 @@
 package unil;
 
 public class Node {
-    public Node shangduixiang;
+    public Node  shangduixiang;
     public int zijishuju;
     public Node xiaduixiang;
     public Node(Node shangduixiang,int zijishuju,Node xiaduixiang){
