@@ -27,6 +27,7 @@ public class Person {
            }
         }
         return false;
+
     }
     //由于只是想让name相同时的hashCode也相同，所以直接将hashCode值重写为name的hashCode值
     public int hashCode(){

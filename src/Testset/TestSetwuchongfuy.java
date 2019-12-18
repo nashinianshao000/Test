@@ -21,6 +21,7 @@ public class TestSetwuchongfuy {
         p.add(new Person("小步",5));
         System.out.println(p.size());//5
 
+
         //没重写方法之前String输出长度为1，person输出长度为5，于是看person类中重写equals
         //重写equals方法后，执行发现依旧为1和5，猜测不只需要重写equals方法，还需要重写HashCode方法，于是看person类中重写HashCode
         //重写hashCode后输出结果为1和1，可以看出HashSet判定重复是看equals比较结果为true，hashCode比较的int一样时，判定重复
