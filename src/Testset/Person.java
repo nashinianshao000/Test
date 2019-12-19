@@ -1,6 +1,6 @@
 package Testset;
 
-public class Person {
+public class Person implements Comparable<Person>{
     //自己写的一个类
     public String name;
     public int number;
@@ -39,4 +39,10 @@ public class Person {
         s.append(this.number);
         return s.toString();
     }
+
+
+    @Override
+    public int compareTo(Person o) {
+        return this.name.compareTo(o.name);
+}
 }
