@@ -1,13 +1,14 @@
 
 package KaoShiXiTong;
 
-public class LaoShi {
+import java.util.ArrayList;
 
-    public int fenShu=0;
-    public int panJuan(String[] zhendaan,String[] daan){
-        for(int x=0;x<daan.length;x++){
-            if(zhendaan[x].equals(daan[x])){
-                fenShu+=20;
+public class LaoShi {
+    public int panJuan(String[] zhendaan, ArrayList<Question> q){
+        int fenShu=0;
+        for(int x=0;x<q.size();x++){
+            if(zhendaan[x].equalsIgnoreCase(q.get(x).getDaan())){
+                fenShu+=100/q.size();
             }
         }
         return fenShu;
